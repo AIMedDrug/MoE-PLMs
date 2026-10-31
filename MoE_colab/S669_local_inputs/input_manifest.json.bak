@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "file": "weights/final_model.pt",
+      "bytes": 1145133,
+      "sha256": "57e73b5c018e0f400404034b5c2b615b1ea6c578062a8efa247d918047df2a01"
+    },
+    {
+      "file": "data/S669.csv",
+      "bytes": 504800,
+      "sha256": "54ff6f8257d0cbff3ab6abcf1ed8419a941d84439187158834d58afe15f82518"
+    },
+    {
+      "file": "data/S669_ProstT5.pt",
+      "bytes": 2937605,
+      "sha256": "fd463221221ed75f1f0e97cb570ab83475ab15ae5161bd9634210af68e5087f5"
+    },
+    {
+      "file": "data/S669_ESMC.pt",
+      "bytes": 3280133,
+      "sha256": "4d2946b133a774baa2f7d55b9f0f33ea251d5dc6248e9a36f54534260899ce31"
+    },
+    {
+      "file": "data/S669_ESM2.pkl",
+      "bytes": 6890574,
+      "sha256": "9a5832ffcf6e707104e705ae9163b4c68e699c534734a0384a0508d543bd710c"
+    }
+  ]
+}

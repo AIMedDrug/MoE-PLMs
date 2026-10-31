@@ -1,0 +1,10 @@
+{
+  "d_model": [32, 64, 128],
+  "hidden_dim_mlp": [32, 64, 128, 256],
+  "num_experts": [4],
+  "top_k": [1],
+  "batch_size": [16, 32, 64],
+  "lr": {"type": "float", "low": 0.00001, "high": 0.003, "log": true},
+  "weight_decay": {"type": "float", "low": 0.000001, "high": 0.01, "log": true},
+  "dropout": {"type": "float", "low": 0.1, "high": 0.5}
+}

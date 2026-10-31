@@ -1,0 +1,62 @@
+{
+  "inputs": {
+    "S8754": {
+      "path": "../../Data/ΔΔG/S8754.csv",
+      "sha256": "a35561659ce0ba3e57c26a6e3a47f5ff67bf919dd431fc2fd4cf154e4f648702",
+      "records": 8754,
+      "unique_wt_sequences": 298,
+      "min_length": 20,
+      "max_length": 677
+    },
+    "S669": {
+      "path": "../../Data/ΔΔG/S669.csv",
+      "sha256": "54ff6f8257d0cbff3ab6abcf1ed8419a941d84439187158834d58afe15f82518",
+      "records": 669,
+      "unique_wt_sequences": 93,
+      "min_length": 33,
+      "max_length": 550
+    },
+    "S4346": {
+      "path": "../../Data/ΔTm/S4346.csv",
+      "sha256": "7ad50552ce0bc500e2c88bdaf5d0ee012fb2631056430278055ba5aaf21ddb23",
+      "records": 4346,
+      "unique_wt_sequences": 346,
+      "min_length": 33,
+      "max_length": 685
+    },
+    "S571": {
+      "path": "../../Data/ΔTm/S571.csv",
+      "sha256": "d5d53d1faa1b6fc506bfa5acdd76b2aca83d72de40dfd76ff4890f07ec6ed67e",
+      "records": 571,
+      "unique_wt_sequences": 39,
+      "min_length": 30,
+      "max_length": 437
+    }
+  },
+  "method": "Needleman-Wunsch strict global alignment with linear gap penalty",
+  "matrix": "BLOSUM62, 20 canonical amino acids",
+  "gap_score_per_residue": -5,
+  "terminal_gap_score_per_residue": -5,
+  "traceback_tie_priority": [
+    "diagonal",
+    "gap in test",
+    "gap in train"
+  ],
+  "similarity_pct": "100 * residue pairs with BLOSUM62 > 0 / total alignment columns including gaps",
+  "deduplication": "exact full-length wt_seq within each dataset; first-occurrence order",
+  "matrix_source": "https://www.ncbi.nlm.nih.gov/IEB/ToolBox/C_DOC/lxr/source/data/BLOSUM62",
+  "algorithm_reference": "https://biopython.org/docs/1.84/Tutorial/chapter_pairwise.html",
+  "python": "3.8.6",
+  "numpy": "1.24.4",
+  "matplotlib": "3.7.5",
+  "input_sequences": {
+    "file": "unique_sequences.tsv",
+    "columns": [
+      "dataset",
+      "uid",
+      "wt_seq"
+    ],
+    "header": false,
+    "sha256": "818c88f491a512c3d53a6292da3771061264e3408cb944471e3370290340631f"
+  }
+}
